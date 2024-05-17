@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condo Manager Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="styles.css">
+    {% load static %}
+    <link rel="stylesheet" type='text/css' href="{% static 'condos.css' %}">
+   
+ 
 </head>
 
 <body>
@@ -88,10 +91,10 @@
 
     <!-- Include Leaflet.js library -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="script.js"></script>
     <!-- Add Leaflet Control Geocoder plugin -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script type = "text/javascript" src="{% static 'condos.js' %}" ></script>
 
 </body>
 
